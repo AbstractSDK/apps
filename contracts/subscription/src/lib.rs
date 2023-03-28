@@ -11,7 +11,7 @@ pub const SUBSCRIPTION: &str = "abstract:subscription";
 pub mod boot {
     use crate::msg::*;
     use abstract_boot::AppDeployer;
-    use abstract_os::app::{BaseInstantiateMsg, InstantiateMsg as AppInitMsg};
+    use abstract_core::app::{BaseInstantiateMsg, InstantiateMsg as AppInitMsg};
     use boot_core::ContractWrapper;
     use boot_core::{boot_contract, BootEnvironment, Contract};
     use cosmwasm_std::{Decimal, Uint128};
