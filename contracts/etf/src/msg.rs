@@ -37,7 +37,7 @@
 //! ## Migration
 //! Migrating this contract is done by calling `ExecuteMsg::Upgrade` on [`crate::manager`] with `crate::ETF` as module.
 use abstract_core::app;
-use abstract_sdk::base::{InstantiateEndpoint, ExecuteEndpoint, QueryEndpoint, MigrateEndpoint};
+use abstract_sdk::base::{ExecuteEndpoint, InstantiateEndpoint, MigrateEndpoint, QueryEndpoint};
 use cosmwasm_schema::QueryResponses;
 use cosmwasm_std::Decimal;
 use cw_asset::AssetUnchecked;

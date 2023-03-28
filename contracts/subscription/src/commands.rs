@@ -350,7 +350,11 @@ pub fn update_contributor_compensation(
 }
 
 /// Removes the specified contributor
-pub fn remove_contributor(deps: DepsMut, msg_info: MessageInfo, os_id: AccountId) -> SubscriptionResult {
+pub fn remove_contributor(
+    deps: DepsMut,
+    msg_info: MessageInfo,
+    os_id: AccountId,
+) -> SubscriptionResult {
     ADMIN.assert_admin(deps.as_ref(), &msg_info.sender)?;
     let sub_config = SUBSCRIPTION_CONFIG.load(deps.storage)?;
     let manager_address =

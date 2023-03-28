@@ -2,19 +2,17 @@
 // mod test_utils;
 
 use abstract_boot::{
-    Abstract, AbstractBootError, AppDeployer, ManagerQueryFns, ProxyExecFns, ProxyQueryFns, AbstractAccount,
+    Abstract, AbstractAccount, AbstractBootError, AppDeployer, ManagerQueryFns, ProxyExecFns,
+    ProxyQueryFns,
 };
 use abstract_etf::{
     boot::ETF,
     msg::{Cw20HookMsg, EtfExecuteMsgFns, EtfQueryMsgFns},
-    ETF_ID
+    ETF_ID,
 };
 
+use abstract_core::{objects::price_source::UncheckedPriceSource, objects::AssetEntry};
 use abstract_sdk::core as abstract_core;
-use abstract_core::{
-    objects::price_source::UncheckedPriceSource,
-    objects::AssetEntry
-};
 
 use abstract_boot::boot_core::*;
 use abstract_testing::prelude::TEST_ADMIN;
