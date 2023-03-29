@@ -44,7 +44,7 @@ pub mod boot {
         ) -> AppInitMsg<InstantiateMsg> {
             AppInitMsg::<InstantiateMsg> {
                 base: BaseInstantiateMsg { ans_host_address },
-                app: InstantiateMsg {
+                module: InstantiateMsg {
                     subscription: SubscriptionInstantiateMsg {
                         factory_addr,
                         payment_asset: AssetInfoUnchecked::native(payment_denom),
