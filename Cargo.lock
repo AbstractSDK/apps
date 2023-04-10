@@ -7,16 +7,16 @@ name = "abstract-account-factory"
 version = "0.13.0"
 source = "git+https://github.com/Abstract-OS/contracts#4ca99009aedf71e928745b43ead7441d4779ebe8"
 dependencies = [
- "abstract-core",
+ "abstract-core 0.13.0",
  "abstract-macros 0.13.0",
  "abstract-sdk 0.13.0",
  "cosmwasm-schema",
  "cosmwasm-std",
  "cw-asset",
- "cw-controllers 1.0.1",
+ "cw-controllers 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "cw-storage-plus 1.0.1",
- "cw2 1.0.1",
- "cw20 1.0.1",
+ "cw2 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cw20 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "protobuf",
  "semver",
  "serde",
@@ -24,19 +24,22 @@ dependencies = [
 ]
 
 [[package]]
-name = "abstract-ans-host"
-version = "0.12.0"
+name = "abstract-account-factory"
+version = "0.13.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "011e10ca8af13556ee33c7b43628df816aae07396e6c1d7c6375ab39c07f3e20"
+checksum = "3f3a21c44d8c054c7b43cdb7219702c077eb3c9cbfa6b15a73c4ceaf1d8c099f"
 dependencies = [
- "abstract-macros 0.11.0",
- "abstract-os",
- "abstract-sdk 0.12.0",
+ "abstract-core 0.13.2",
+ "abstract-macros 0.13.2",
+ "abstract-sdk 0.13.2",
+ "cosmwasm-schema",
  "cosmwasm-std",
  "cw-asset",
- "cw-controllers 1.0.1",
+ "cw-controllers 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "cw-storage-plus 1.0.1",
- "cw2 1.0.1",
+ "cw2 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cw20 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "protobuf",
  "semver",
  "serde",
  "thiserror",
@@ -47,14 +50,34 @@ name = "abstract-ans-host"
 version = "0.13.0"
 source = "git+https://github.com/Abstract-OS/contracts#4ca99009aedf71e928745b43ead7441d4779ebe8"
 dependencies = [
- "abstract-core",
+ "abstract-core 0.13.0",
  "abstract-macros 0.13.0",
  "abstract-sdk 0.13.0",
  "cosmwasm-std",
  "cw-asset",
- "cw-controllers 1.0.1",
+ "cw-controllers 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "cw-storage-plus 1.0.1",
- "cw2 1.0.1",
+ "cw2 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "semver",
+ "serde",
+ "thiserror",
+]
+
+[[package]]
+name = "abstract-ans-host"
+version = "0.13.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a8330f852958a8037c323935dd9d952e9e66ab660e22b59613e29ccbbe141087"
+dependencies = [
+ "abstract-core 0.13.2",
+ "abstract-macros 0.13.2",
+ "abstract-sdk 0.13.2",
+ "cosmwasm-std",
+ "cw-asset",
+ "cw-controllers 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cw-ownable",
+ "cw-storage-plus 1.0.1",
+ "cw2 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "semver",
  "serde",
  "thiserror",
@@ -65,13 +88,13 @@ name = "abstract-api"
 version = "0.13.0"
 source = "git+https://github.com/Abstract-OS/contracts#4ca99009aedf71e928745b43ead7441d4779ebe8"
 dependencies = [
- "abstract-core",
+ "abstract-core 0.13.0",
  "abstract-sdk 0.13.0",
  "cosmwasm-schema",
  "cosmwasm-std",
- "cw-controllers 1.0.1",
+ "cw-controllers 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "cw-storage-plus 1.0.1",
- "cw2 1.0.1",
+ "cw2 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "schemars",
  "serde",
  "thiserror",
@@ -82,14 +105,14 @@ name = "abstract-app"
 version = "0.13.0"
 source = "git+https://github.com/Abstract-OS/contracts#4ca99009aedf71e928745b43ead7441d4779ebe8"
 dependencies = [
- "abstract-core",
+ "abstract-core 0.13.0",
  "abstract-sdk 0.13.0",
  "cosmwasm-schema",
  "cosmwasm-std",
  "cw-asset",
- "cw-controllers 1.0.1",
+ "cw-controllers 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "cw-storage-plus 1.0.1",
- "cw2 1.0.1",
+ "cw2 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "schemars",
  "semver",
  "serde",
@@ -98,24 +121,23 @@ dependencies = [
 
 [[package]]
 name = "abstract-boot"
-version = "0.12.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ee709fb951196f6b9bfccc3ee195b629d80284fcf0b20cf493b85ac89a84e3f5"
+version = "0.13.0"
+source = "git+https://github.com/Abstract-OS/contracts#4ca99009aedf71e928745b43ead7441d4779ebe8"
 dependencies = [
- "abstract-ans-host 0.12.0",
- "abstract-manager 0.12.0",
- "abstract-module-factory 0.12.0",
- "abstract-os",
- "abstract-os-factory",
- "abstract-proxy 0.12.0",
- "abstract-version-control 0.12.0",
- "boot-core",
+ "abstract-account-factory 0.13.0",
+ "abstract-ans-host 0.13.0",
+ "abstract-core 0.13.0",
+ "abstract-manager 0.13.0",
+ "abstract-module-factory 0.13.0",
+ "abstract-proxy 0.13.0",
+ "abstract-version-control 0.13.0",
+ "boot-core 0.8.0",
  "cosmwasm-schema",
  "cosmwasm-std",
  "cw-asset",
- "cw-controllers 1.0.1",
+ "cw-controllers 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "cw-storage-plus 1.0.1",
- "cw2 1.0.1",
+ "cw2 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "log",
  "schemars",
  "semver",
@@ -128,23 +150,24 @@ dependencies = [
 
 [[package]]
 name = "abstract-boot"
-version = "0.13.0"
-source = "git+https://github.com/Abstract-OS/contracts#4ca99009aedf71e928745b43ead7441d4779ebe8"
+version = "0.13.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c8d35e516210921fa31077543fe8bca2897d802a75d169eef4e1fa1026aecb76"
 dependencies = [
- "abstract-account-factory",
- "abstract-ans-host 0.13.0",
- "abstract-core",
- "abstract-manager 0.13.0",
- "abstract-module-factory 0.13.0",
- "abstract-proxy 0.13.0",
- "abstract-version-control 0.13.0",
- "boot-core",
+ "abstract-account-factory 0.13.2",
+ "abstract-ans-host 0.13.2",
+ "abstract-core 0.13.2",
+ "abstract-manager 0.13.2",
+ "abstract-module-factory 0.13.2",
+ "abstract-proxy 0.13.2",
+ "abstract-version-control 0.13.2",
+ "boot-core 0.10.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "cosmwasm-schema",
  "cosmwasm-std",
  "cw-asset",
- "cw-controllers 1.0.1",
+ "cw-controllers 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "cw-storage-plus 1.0.1",
- "cw2 1.0.1",
+ "cw2 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "log",
  "schemars",
  "semver",
@@ -161,17 +184,43 @@ version = "0.13.0"
 source = "git+https://github.com/Abstract-OS/contracts#4ca99009aedf71e928745b43ead7441d4779ebe8"
 dependencies = [
  "abstract-ica 0.13.0",
- "boot-core",
+ "boot-core 0.8.0",
  "cosmwasm-schema",
  "cosmwasm-std",
  "cw-asset",
- "cw-controllers 1.0.1",
+ "cw-controllers 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "cw-semver",
  "cw-storage-plus 1.0.1",
  "cw-utils 1.0.1",
- "cw2 1.0.1",
- "cw20 1.0.1",
- "cw20-base 1.0.1",
+ "cw2 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cw20 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cw20-base 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "schemars",
+ "semver",
+ "serde",
+ "thiserror",
+]
+
+[[package]]
+name = "abstract-core"
+version = "0.13.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "711c40a6d83b099efdc991497025f23ed62146a65f17513fb28556bff837c55a"
+dependencies = [
+ "abstract-ica 0.13.2",
+ "boot-core 0.10.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cosmwasm-schema",
+ "cosmwasm-std",
+ "cw-address-like",
+ "cw-asset",
+ "cw-controllers 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cw-ownable",
+ "cw-semver",
+ "cw-storage-plus 1.0.1",
+ "cw-utils 1.0.1",
+ "cw2 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cw20 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cw20-base 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "schemars",
  "semver",
  "serde",
@@ -184,21 +233,21 @@ version = "0.11.0"
 dependencies = [
  "abstract-app",
  "abstract-boot 0.13.0",
- "abstract-core",
+ "abstract-core 0.13.0",
  "abstract-etf",
  "abstract-sdk 0.13.0",
  "abstract-testing",
  "anyhow",
- "boot-core",
- "boot-cw-plus",
+ "boot-core 0.8.0",
+ "boot-cw-plus 0.8.0",
  "cosmwasm-schema",
  "cosmwasm-std",
  "cw-asset",
- "cw-controllers 1.0.1",
+ "cw-controllers 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "cw-staking",
  "cw-storage-plus 1.0.1",
- "cw20 1.0.1",
- "cw20-base 1.0.1",
+ "cw20 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cw20-base 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "dex",
  "protobuf",
  "schemars",
@@ -210,9 +259,8 @@ dependencies = [
 
 [[package]]
 name = "abstract-ica"
-version = "0.11.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2e180d1fd424c65f608cf285c95d14710bdd84d4098b73c66ee8349bc45739bb"
+version = "0.13.0"
+source = "git+https://github.com/Abstract-OS/contracts#4ca99009aedf71e928745b43ead7441d4779ebe8"
 dependencies = [
  "cosmwasm-schema",
  "cosmwasm-std",
@@ -223,25 +271,15 @@ dependencies = [
 
 [[package]]
 name = "abstract-ica"
-version = "0.13.0"
-source = "git+https://github.com/Abstract-OS/contracts#4ca99009aedf71e928745b43ead7441d4779ebe8"
+version = "0.13.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "61ce17d4dcd9c5dcbc834461696cbed912ddb76915383e4b1b2c5f4106ac3e75"
 dependencies = [
  "cosmwasm-schema",
  "cosmwasm-std",
  "schemars",
  "serde",
  "thiserror",
-]
-
-[[package]]
-name = "abstract-macros"
-version = "0.11.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4f181d2710741c377e9374b45d16bef2a42530e46199ab4089546456c5676d25"
-dependencies = [
- "proc-macro2",
- "quote",
- "syn 1.0.109",
 ]
 
 [[package]]
@@ -255,22 +293,32 @@ dependencies = [
 ]
 
 [[package]]
-name = "abstract-manager"
-version = "0.12.0"
+name = "abstract-macros"
+version = "0.13.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "36d304a5a4282725cd84dc7e2d7ebf6c771a16dc5555c745fbd16aebdc2a1bae"
+checksum = "26aa7e0b9495c7b412a7b872a30416b299a0f3afab975e42f77306a12bd4eed2"
 dependencies = [
- "abstract-macros 0.11.0",
- "abstract-os",
- "abstract-sdk 0.12.0",
+ "proc-macro2",
+ "quote",
+ "syn 1.0.109",
+]
+
+[[package]]
+name = "abstract-manager"
+version = "0.13.0"
+source = "git+https://github.com/Abstract-OS/contracts#4ca99009aedf71e928745b43ead7441d4779ebe8"
+dependencies = [
+ "abstract-core 0.13.0",
+ "abstract-macros 0.13.0",
+ "abstract-sdk 0.13.0",
  "cosmwasm-schema",
  "cosmwasm-std",
  "cw-asset",
- "cw-controllers 1.0.1",
+ "cw-controllers 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "cw-semver",
  "cw-storage-plus 1.0.1",
- "cw2 1.0.1",
- "cw20 1.0.1",
+ "cw2 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cw20 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "schemars",
  "semver",
  "serde",
@@ -279,20 +327,21 @@ dependencies = [
 
 [[package]]
 name = "abstract-manager"
-version = "0.13.0"
-source = "git+https://github.com/Abstract-OS/contracts#4ca99009aedf71e928745b43ead7441d4779ebe8"
+version = "0.13.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3228465bc271dea525f108a50c7c6381f750710d67ecf16dba24b6d58957fa62"
 dependencies = [
- "abstract-core",
- "abstract-macros 0.13.0",
- "abstract-sdk 0.13.0",
+ "abstract-core 0.13.2",
+ "abstract-macros 0.13.2",
+ "abstract-sdk 0.13.2",
  "cosmwasm-schema",
  "cosmwasm-std",
  "cw-asset",
- "cw-controllers 1.0.1",
+ "cw-controllers 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "cw-semver",
  "cw-storage-plus 1.0.1",
- "cw2 1.0.1",
- "cw20 1.0.1",
+ "cw2 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cw20 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "schemars",
  "semver",
  "serde",
@@ -301,19 +350,18 @@ dependencies = [
 
 [[package]]
 name = "abstract-module-factory"
-version = "0.12.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "226eb80e7cb984f8887b25aa287078a108f5f23c360f0bbd6d73f294d770f1b8"
+version = "0.13.0"
+source = "git+https://github.com/Abstract-OS/contracts#4ca99009aedf71e928745b43ead7441d4779ebe8"
 dependencies = [
- "abstract-macros 0.11.0",
- "abstract-os",
- "abstract-sdk 0.12.0",
+ "abstract-core 0.13.0",
+ "abstract-macros 0.13.0",
+ "abstract-sdk 0.13.0",
  "cosmwasm-schema",
  "cosmwasm-std",
  "cw-asset",
- "cw-controllers 1.0.1",
+ "cw-controllers 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "cw-storage-plus 1.0.1",
- "cw2 1.0.1",
+ "cw2 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "protobuf",
  "semver",
  "thiserror",
@@ -321,88 +369,21 @@ dependencies = [
 
 [[package]]
 name = "abstract-module-factory"
-version = "0.13.0"
-source = "git+https://github.com/Abstract-OS/contracts#4ca99009aedf71e928745b43ead7441d4779ebe8"
+version = "0.13.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ef7713203b34bd49de3e2af1dd72fb322a986b0f0215e847b2111cb4b3195e35"
 dependencies = [
- "abstract-core",
- "abstract-macros 0.13.0",
- "abstract-sdk 0.13.0",
+ "abstract-core 0.13.2",
+ "abstract-macros 0.13.2",
+ "abstract-sdk 0.13.2",
  "cosmwasm-schema",
  "cosmwasm-std",
  "cw-asset",
- "cw-controllers 1.0.1",
+ "cw-controllers 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "cw-storage-plus 1.0.1",
- "cw2 1.0.1",
+ "cw2 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "protobuf",
  "semver",
- "thiserror",
-]
-
-[[package]]
-name = "abstract-os"
-version = "0.12.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d7b71081515639313ad5f9e4402318e1177ee72cab6c0f05faa6c9b5f1a9f096"
-dependencies = [
- "abstract-ica 0.11.0",
- "boot-core",
- "cosmwasm-schema",
- "cosmwasm-std",
- "cw-asset",
- "cw-controllers 1.0.1",
- "cw-semver",
- "cw-storage-plus 1.0.1",
- "cw-utils 1.0.1",
- "cw2 1.0.1",
- "cw20 1.0.1",
- "cw20-base 1.0.1",
- "schemars",
- "semver",
- "serde",
- "thiserror",
-]
-
-[[package]]
-name = "abstract-os-factory"
-version = "0.12.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a1ff1edda3800bcb580b318e36a771ee126ff1d9028a65e882a4aad46bccca04"
-dependencies = [
- "abstract-macros 0.11.0",
- "abstract-os",
- "abstract-sdk 0.12.0",
- "cosmwasm-schema",
- "cosmwasm-std",
- "cw-asset",
- "cw-controllers 1.0.1",
- "cw-storage-plus 1.0.1",
- "cw2 1.0.1",
- "cw20 1.0.1",
- "protobuf",
- "semver",
- "serde",
- "thiserror",
-]
-
-[[package]]
-name = "abstract-proxy"
-version = "0.12.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7c75f025504e0789bac301e4db779f78d24e2abfe38bcdb5effb656a0f38a0fc"
-dependencies = [
- "abstract-macros 0.11.0",
- "abstract-os",
- "abstract-sdk 0.12.0",
- "cosmwasm-schema",
- "cosmwasm-std",
- "cw-asset",
- "cw-controllers 1.0.1",
- "cw-storage-plus 1.0.1",
- "cw2 1.0.1",
- "cw20 1.0.1",
- "schemars",
- "semver",
- "serde",
  "thiserror",
 ]
 
@@ -411,16 +392,16 @@ name = "abstract-proxy"
 version = "0.13.0"
 source = "git+https://github.com/Abstract-OS/contracts#4ca99009aedf71e928745b43ead7441d4779ebe8"
 dependencies = [
- "abstract-core",
+ "abstract-core 0.13.0",
  "abstract-macros 0.13.0",
  "abstract-sdk 0.13.0",
  "cosmwasm-schema",
  "cosmwasm-std",
  "cw-asset",
- "cw-controllers 1.0.1",
+ "cw-controllers 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "cw-storage-plus 1.0.1",
- "cw2 1.0.1",
- "cw20 1.0.1",
+ "cw2 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cw20 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "schemars",
  "semver",
  "serde",
@@ -428,19 +409,21 @@ dependencies = [
 ]
 
 [[package]]
-name = "abstract-sdk"
-version = "0.12.0"
+name = "abstract-proxy"
+version = "0.13.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "420e0d148b15b7b1b54095a12d1455e10ef42ccd9cacd03020d7755740a468a5"
+checksum = "51cff9284c9ef6bda480cee5ea9a8d67d706bfa83ff94142574b6435ece2422d"
 dependencies = [
- "abstract-macros 0.11.0",
- "abstract-os",
+ "abstract-core 0.13.2",
+ "abstract-macros 0.13.2",
+ "abstract-sdk 0.13.2",
+ "cosmwasm-schema",
  "cosmwasm-std",
  "cw-asset",
- "cw-controllers 1.0.1",
+ "cw-controllers 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "cw-storage-plus 1.0.1",
- "cw2 1.0.1",
- "cw20 1.0.1",
+ "cw2 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cw20 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "schemars",
  "semver",
  "serde",
@@ -452,14 +435,34 @@ name = "abstract-sdk"
 version = "0.13.0"
 source = "git+https://github.com/Abstract-OS/contracts#4ca99009aedf71e928745b43ead7441d4779ebe8"
 dependencies = [
- "abstract-core",
+ "abstract-core 0.13.0",
  "abstract-macros 0.13.0",
  "cosmwasm-std",
  "cw-asset",
- "cw-controllers 1.0.1",
+ "cw-controllers 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "cw-storage-plus 1.0.1",
- "cw2 1.0.1",
- "cw20 1.0.1",
+ "cw2 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cw20 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "schemars",
+ "semver",
+ "serde",
+ "thiserror",
+]
+
+[[package]]
+name = "abstract-sdk"
+version = "0.13.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6bc01aace4fd5c01086b777090952c0f98c7453c69dd938fffc96aa9b9be52b8"
+dependencies = [
+ "abstract-core 0.13.2",
+ "abstract-macros 0.13.2",
+ "cosmwasm-std",
+ "cw-asset",
+ "cw-controllers 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cw-storage-plus 1.0.1",
+ "cw2 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cw20 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "schemars",
  "semver",
  "serde",
@@ -471,12 +474,12 @@ name = "abstract-testing"
 version = "0.13.0"
 source = "git+https://github.com/Abstract-OS/contracts#4ca99009aedf71e928745b43ead7441d4779ebe8"
 dependencies = [
- "abstract-core",
+ "abstract-core 0.13.0",
  "cosmwasm-schema",
  "cosmwasm-std",
  "cw-asset",
  "cw-storage-plus 1.0.1",
- "cw2 1.0.1",
+ "cw2 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "derive_builder",
  "schemars",
  "serde",
@@ -486,35 +489,35 @@ dependencies = [
 
 [[package]]
 name = "abstract-version-control"
-version = "0.12.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "200b01ab2582ba7c9e16391c864874ea08d3f8bf3707fef9ad68b369df662510"
+version = "0.13.0"
+source = "git+https://github.com/Abstract-OS/contracts#4ca99009aedf71e928745b43ead7441d4779ebe8"
 dependencies = [
- "abstract-macros 0.11.0",
- "abstract-os",
- "abstract-sdk 0.12.0",
+ "abstract-core 0.13.0",
+ "abstract-macros 0.13.0",
+ "abstract-sdk 0.13.0",
  "cosmwasm-std",
- "cw-controllers 1.0.1",
+ "cw-controllers 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "cw-semver",
  "cw-storage-plus 1.0.1",
- "cw2 1.0.1",
+ "cw2 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde",
  "thiserror",
 ]
 
 [[package]]
 name = "abstract-version-control"
-version = "0.13.0"
-source = "git+https://github.com/Abstract-OS/contracts#4ca99009aedf71e928745b43ead7441d4779ebe8"
+version = "0.13.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e2a70cb95f26033457a9809d14c53c42d421097307200ca7a8b6ff6cc596efa8"
 dependencies = [
- "abstract-core",
- "abstract-macros 0.13.0",
- "abstract-sdk 0.13.0",
+ "abstract-core 0.13.2",
+ "abstract-macros 0.13.2",
+ "abstract-sdk 0.13.2",
  "cosmwasm-std",
- "cw-controllers 1.0.1",
+ "cw-controllers 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "cw-semver",
  "cw-storage-plus 1.0.1",
- "cw2 1.0.1",
+ "cw2 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde",
  "thiserror",
 ]
@@ -617,7 +620,23 @@ dependencies = [
  "rustls-native-certs 0.6.2",
  "tokio",
  "tokio-rustls 0.23.4",
- "tungstenite",
+ "tungstenite 0.17.3",
+]
+
+[[package]]
+name = "async-tungstenite"
+version = "0.20.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1e0388bb7a400072bbb41ceb75d65c3baefb2ea99672fa22e85278452cd9b58b"
+dependencies = [
+ "futures-io",
+ "futures-util",
+ "log",
+ "pin-project-lite",
+ "rustls-native-certs 0.6.2",
+ "tokio",
+ "tokio-rustls 0.23.4",
+ "tungstenite 0.18.0",
 ]
 
 [[package]]
@@ -738,15 +757,43 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0694ea59225b0c5f3cb405ff3f670e4828358ed26aec49dc352f730f0cb1a8a3"
 dependencies = [
  "bech32",
- "bitcoin_hashes",
- "secp256k1",
+ "bitcoin_hashes 0.11.0",
+ "secp256k1 0.24.3",
 ]
+
+[[package]]
+name = "bitcoin"
+version = "0.30.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b36f4c848f6bd9ff208128f08751135846cc23ae57d66ab10a22efff1c675f3c"
+dependencies = [
+ "bech32",
+ "bitcoin-private",
+ "bitcoin_hashes 0.12.0",
+ "hex_lit",
+ "secp256k1 0.27.0",
+]
+
+[[package]]
+name = "bitcoin-private"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "73290177011694f38ec25e165d0387ab7ea749a4b81cd4c80dae5988229f7a57"
 
 [[package]]
 name = "bitcoin_hashes"
 version = "0.11.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "90064b8dee6815a6470d60bad07bbbaee885c0e12d04177138fa3291a01b7bc4"
+
+[[package]]
+name = "bitcoin_hashes"
+version = "0.12.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5d7066118b13d4b20b23645932dfb3a81ce7e29f95726c2036fa33cd7b092501"
+dependencies = [
+ "bitcoin-private",
+]
 
 [[package]]
 name = "bitflags"
@@ -783,6 +830,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "boot-contract-derive"
+version = "0.10.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b6d5010efb5d2f121985dca0aa92acd3fce48bcdfc99f6b11a0464e8aeaf717d"
+dependencies = [
+ "quote",
+ "syn 1.0.109",
+]
+
+[[package]]
 name = "boot-core"
 version = "0.8.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -791,11 +848,11 @@ dependencies = [
  "anyhow",
  "base16",
  "base64 0.20.0",
- "bitcoin",
- "boot-contract-derive",
- "boot-fns-derive",
+ "bitcoin 0.29.2",
+ "boot-contract-derive 0.8.0",
+ "boot-fns-derive 0.8.0",
  "chrono",
- "cosmrs",
+ "cosmrs 0.9.0",
  "cosmwasm-std",
  "cw-multi-test",
  "derive_builder",
@@ -803,14 +860,14 @@ dependencies = [
  "eyre",
  "hex",
  "hkd32",
- "ibc-chain-registry",
+ "ibc-chain-registry 0.2.0",
  "log",
  "prost 0.11.8",
  "rand_core 0.6.4",
  "reqwest",
  "rust-crypto",
  "schemars",
- "secp256k1",
+ "secp256k1 0.24.3",
  "serde",
  "serde_json",
  "sha256",
@@ -820,18 +877,97 @@ dependencies = [
 ]
 
 [[package]]
+name = "boot-core"
+version = "0.10.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f94dfd762791312c37914087fc3771ec827e27295b87e5c941a904f9791cceb8"
+dependencies = [
+ "anyhow",
+ "base16",
+ "base64 0.21.0",
+ "bitcoin 0.30.0",
+ "boot-contract-derive 0.10.0",
+ "boot-fns-derive 0.10.0",
+ "chrono",
+ "cosmrs 0.12.0",
+ "cosmwasm-std",
+ "cw-multi-test",
+ "derive_builder",
+ "ed25519-dalek",
+ "eyre",
+ "hex",
+ "hkd32",
+ "ibc-chain-registry 0.23.0",
+ "log",
+ "prost 0.11.8",
+ "rand_core 0.6.4",
+ "reqwest",
+ "ring",
+ "ripemd",
+ "schemars",
+ "secp256k1 0.27.0",
+ "serde",
+ "serde_json",
+ "sha256",
+ "thiserror",
+ "tokio",
+ "tonic",
+]
+
+[[package]]
+name = "boot-core"
+version = "0.10.0"
+source = "git+https://github.com/Abstract-OS/BOOT.git#3b5653f4461c44ad42c97314ff71838382fc8586"
+dependencies = [
+ "anyhow",
+ "boot-contract-derive 0.10.0",
+ "boot-fns-derive 0.10.0",
+ "cosmwasm-std",
+ "cw-multi-test",
+ "log",
+ "schemars",
+ "serde",
+ "serde_json",
+ "thiserror",
+]
+
+[[package]]
 name = "boot-cw-plus"
 version = "0.8.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1137e2961f843b421fb0bfc5f6bf1e029d01812a9360251ac3bc6693198eb00a"
 dependencies = [
  "anyhow",
- "boot-core",
+ "boot-core 0.8.0",
  "cosmwasm-std",
  "cw-multi-test",
- "cw1-whitelist",
- "cw20 1.0.1",
- "cw20-base 1.0.1",
+ "cw1-whitelist 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cw20 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cw20-base 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "serde",
+]
+
+[[package]]
+name = "boot-cw-plus"
+version = "0.10.0"
+source = "git+https://github.com/Abstract-OS/BOOT.git#3b5653f4461c44ad42c97314ff71838382fc8586"
+dependencies = [
+ "anyhow",
+ "boot-core 0.10.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cosmwasm-std",
+ "cw-multi-test",
+ "cw1 1.0.1 (git+https://github.com/Abstract-OS/cw-plus.git)",
+ "cw1-subkeys",
+ "cw1-whitelist 1.0.1 (git+https://github.com/Abstract-OS/cw-plus.git)",
+ "cw20 1.0.1 (git+https://github.com/Abstract-OS/cw-plus.git)",
+ "cw20-base 1.0.1 (git+https://github.com/Abstract-OS/cw-plus.git)",
+ "cw20-ics20",
+ "cw3",
+ "cw3-fixed-multisig",
+ "cw3-flex-multisig",
+ "cw4",
+ "cw4-group",
+ "cw4-stake",
  "serde",
 ]
 
@@ -840,6 +976,18 @@ name = "boot-fns-derive"
 version = "0.8.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "68b4307f1c27ffe0dcdfa63882069bdc1f8c3246e706a4b1ce45e126a1ff4bcf"
+dependencies = [
+ "convert_case",
+ "proc-macro2",
+ "quote",
+ "syn 1.0.109",
+]
+
+[[package]]
+name = "boot-fns-derive"
+version = "0.10.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d393ab931ab528220197c7fe9bfc361f0a0459743d4dd49211cec86ee1d70232"
 dependencies = [
  "convert_case",
  "proc-macro2",
@@ -958,13 +1106,25 @@ dependencies = [
 ]
 
 [[package]]
+name = "cosmos-sdk-proto"
+version = "0.17.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ade369159e0256ae10c6fb5f16decc37129d6b2416710456185daacfa65bdfae"
+dependencies = [
+ "prost 0.11.8",
+ "prost-types",
+ "tendermint-proto 0.30.0",
+ "tonic",
+]
+
+[[package]]
 name = "cosmrs"
 version = "0.9.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3903590099dcf1ea580d9353034c9ba1dbf55d1389a5bd2ade98535c3445d1f9"
 dependencies = [
  "bip32",
- "cosmos-sdk-proto",
+ "cosmos-sdk-proto 0.14.0",
  "ecdsa",
  "eyre",
  "getrandom 0.2.8",
@@ -975,6 +1135,28 @@ dependencies = [
  "subtle-encoding",
  "tendermint 0.23.9",
  "tendermint-rpc 0.23.9",
+ "thiserror",
+ "tokio",
+]
+
+[[package]]
+name = "cosmrs"
+version = "0.12.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "466426988551efa4cce46bac51ce6b6e047ea7b76086ac5e47bffad90a3c093e"
+dependencies = [
+ "bip32",
+ "cosmos-sdk-proto 0.17.0",
+ "ecdsa",
+ "eyre",
+ "getrandom 0.2.8",
+ "k256",
+ "rand_core 0.6.4",
+ "serde",
+ "serde_json",
+ "subtle-encoding",
+ "tendermint 0.30.0",
+ "tendermint-rpc 0.30.0",
  "thiserror",
  "tokio",
 ]
@@ -1115,6 +1297,19 @@ dependencies = [
 ]
 
 [[package]]
+name = "curve25519-dalek-ng"
+version = "4.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1c359b7249347e46fb28804470d071c921156ad62b3eef5d34e2ba867533dec8"
+dependencies = [
+ "byteorder",
+ "digest 0.9.0",
+ "rand_core 0.6.4",
+ "subtle-ng",
+ "zeroize",
+]
+
+[[package]]
 name = "cw-address-like"
 version = "1.0.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1133,7 +1328,7 @@ dependencies = [
  "cosmwasm-std",
  "cw-address-like",
  "cw-storage-plus 1.0.1",
- "cw20 1.0.1",
+ "cw20 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "thiserror",
 ]
 
@@ -1167,6 +1362,20 @@ dependencies = [
 ]
 
 [[package]]
+name = "cw-controllers"
+version = "1.0.1"
+source = "git+https://github.com/Abstract-OS/cw-plus.git#914729bbee842d2f79651b6024d634f1d53fec2f"
+dependencies = [
+ "cosmwasm-schema",
+ "cosmwasm-std",
+ "cw-storage-plus 1.0.1",
+ "cw-utils 1.0.1",
+ "schemars",
+ "serde",
+ "thiserror",
+]
+
+[[package]]
 name = "cw-multi-test"
 version = "0.16.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1186,6 +1395,32 @@ dependencies = [
 ]
 
 [[package]]
+name = "cw-ownable"
+version = "0.5.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "093dfb4520c48b5848274dd88ea99e280a04bc08729603341c7fb0d758c74321"
+dependencies = [
+ "cosmwasm-schema",
+ "cosmwasm-std",
+ "cw-address-like",
+ "cw-ownable-derive",
+ "cw-storage-plus 1.0.1",
+ "cw-utils 1.0.1",
+ "thiserror",
+]
+
+[[package]]
+name = "cw-ownable-derive"
+version = "0.5.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a1d3bf2e0f341bb6cc100d7d441d31cf713fbd3ce0c511f91e79f14b40a889af"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn 1.0.109",
+]
+
+[[package]]
 name = "cw-placeholder"
 version = "1.1.2"
 source = "git+https://github.com/cosmorama/wynddex.git?rev=v1.1.2#acca3311673d9d7c990a88d910f4a03a9acf25fd"
@@ -1193,7 +1428,7 @@ dependencies = [
  "cosmwasm-schema",
  "cosmwasm-std",
  "cw-storage-plus 1.0.1",
- "cw2 1.0.1",
+ "cw2 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "thiserror",
 ]
 
@@ -1213,18 +1448,18 @@ source = "git+https://github.com/Abstract-OS/apis.git#e31b26569e7fdb6caf62c483d4
 dependencies = [
  "abstract-api",
  "abstract-boot 0.13.0",
- "abstract-core",
+ "abstract-core 0.13.0",
  "abstract-sdk 0.13.0",
  "astroport 2.0.0 (git+https://github.com/astroport-fi/astroport-core.git?rev=126d43216111df786472fe2a845c1e2fadfe4a36)",
- "boot-core",
+ "boot-core 0.8.0",
  "cosmwasm-schema",
  "cosmwasm-std",
  "cw-asset",
- "cw-controllers 1.0.1",
+ "cw-controllers 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "cw-utils 0.13.4",
  "cw-utils 1.0.1",
  "cw20 0.10.3",
- "cw20 1.0.1",
+ "cw20 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "cw20-stake",
  "schemars",
  "serde",
@@ -1298,7 +1533,7 @@ checksum = "c80e93d1deccb8588db03945016a292c3c631e6325d349ebb35d2db6f4f946f7"
 dependencies = [
  "cosmwasm-schema",
  "cosmwasm-std",
- "cw2 1.0.1",
+ "cw2 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "schemars",
  "semver",
  "serde",
@@ -1330,6 +1565,37 @@ dependencies = [
 ]
 
 [[package]]
+name = "cw1"
+version = "1.0.1"
+source = "git+https://github.com/Abstract-OS/cw-plus.git#914729bbee842d2f79651b6024d634f1d53fec2f"
+dependencies = [
+ "boot-core 0.10.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cosmwasm-schema",
+ "cosmwasm-std",
+ "schemars",
+ "serde",
+]
+
+[[package]]
+name = "cw1-subkeys"
+version = "1.0.1"
+source = "git+https://github.com/Abstract-OS/cw-plus.git#914729bbee842d2f79651b6024d634f1d53fec2f"
+dependencies = [
+ "boot-core 0.10.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cosmwasm-schema",
+ "cosmwasm-std",
+ "cw-storage-plus 1.0.1",
+ "cw-utils 1.0.1",
+ "cw1 1.0.1 (git+https://github.com/Abstract-OS/cw-plus.git)",
+ "cw1-whitelist 1.0.1 (git+https://github.com/Abstract-OS/cw-plus.git)",
+ "cw2 1.0.1 (git+https://github.com/Abstract-OS/cw-plus.git)",
+ "schemars",
+ "semver",
+ "serde",
+ "thiserror",
+]
+
+[[package]]
 name = "cw1-whitelist"
 version = "1.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1339,8 +1605,25 @@ dependencies = [
  "cosmwasm-std",
  "cw-storage-plus 1.0.1",
  "cw-utils 1.0.1",
- "cw1",
- "cw2 1.0.1",
+ "cw1 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cw2 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "schemars",
+ "serde",
+ "thiserror",
+]
+
+[[package]]
+name = "cw1-whitelist"
+version = "1.0.1"
+source = "git+https://github.com/Abstract-OS/cw-plus.git#914729bbee842d2f79651b6024d634f1d53fec2f"
+dependencies = [
+ "boot-core 0.10.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cosmwasm-schema",
+ "cosmwasm-std",
+ "cw-storage-plus 1.0.1",
+ "cw-utils 1.0.1",
+ "cw1 1.0.1 (git+https://github.com/Abstract-OS/cw-plus.git)",
+ "cw2 1.0.1 (git+https://github.com/Abstract-OS/cw-plus.git)",
  "schemars",
  "serde",
  "thiserror",
@@ -1396,6 +1679,19 @@ dependencies = [
 ]
 
 [[package]]
+name = "cw2"
+version = "1.0.1"
+source = "git+https://github.com/Abstract-OS/cw-plus.git#914729bbee842d2f79651b6024d634f1d53fec2f"
+dependencies = [
+ "cosmwasm-schema",
+ "cosmwasm-std",
+ "cw-storage-plus 1.0.1",
+ "schemars",
+ "serde",
+ "thiserror",
+]
+
+[[package]]
 name = "cw20"
 version = "0.10.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1425,6 +1721,19 @@ version = "1.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "91666da6c7b40c8dd5ff94df655a28114efc10c79b70b4d06f13c31e37d60609"
 dependencies = [
+ "cosmwasm-schema",
+ "cosmwasm-std",
+ "cw-utils 1.0.1",
+ "schemars",
+ "serde",
+]
+
+[[package]]
+name = "cw20"
+version = "1.0.1"
+source = "git+https://github.com/Abstract-OS/cw-plus.git#914729bbee842d2f79651b6024d634f1d53fec2f"
+dependencies = [
+ "boot-core 0.10.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "cosmwasm-schema",
  "cosmwasm-std",
  "cw-utils 1.0.1",
@@ -1474,8 +1783,45 @@ dependencies = [
  "cosmwasm-std",
  "cw-storage-plus 1.0.1",
  "cw-utils 1.0.1",
- "cw2 1.0.1",
- "cw20 1.0.1",
+ "cw2 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cw20 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "schemars",
+ "semver",
+ "serde",
+ "thiserror",
+]
+
+[[package]]
+name = "cw20-base"
+version = "1.0.1"
+source = "git+https://github.com/Abstract-OS/cw-plus.git#914729bbee842d2f79651b6024d634f1d53fec2f"
+dependencies = [
+ "boot-core 0.10.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cosmwasm-schema",
+ "cosmwasm-std",
+ "cw-storage-plus 1.0.1",
+ "cw-utils 1.0.1",
+ "cw2 1.0.1 (git+https://github.com/Abstract-OS/cw-plus.git)",
+ "cw20 1.0.1 (git+https://github.com/Abstract-OS/cw-plus.git)",
+ "schemars",
+ "semver",
+ "serde",
+ "thiserror",
+]
+
+[[package]]
+name = "cw20-ics20"
+version = "1.0.1"
+source = "git+https://github.com/Abstract-OS/cw-plus.git#914729bbee842d2f79651b6024d634f1d53fec2f"
+dependencies = [
+ "boot-core 0.10.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cosmwasm-schema",
+ "cosmwasm-std",
+ "cw-controllers 1.0.1 (git+https://github.com/Abstract-OS/cw-plus.git)",
+ "cw-storage-plus 1.0.1",
+ "cw-utils 1.0.1",
+ "cw2 1.0.1 (git+https://github.com/Abstract-OS/cw-plus.git)",
+ "cw20 1.0.1 (git+https://github.com/Abstract-OS/cw-plus.git)",
  "schemars",
  "semver",
  "serde",
@@ -1495,6 +1841,108 @@ dependencies = [
  "cw2 0.13.4",
  "cw20 0.13.4",
  "cw20-base 0.13.4",
+ "schemars",
+ "serde",
+ "thiserror",
+]
+
+[[package]]
+name = "cw3"
+version = "1.0.1"
+source = "git+https://github.com/Abstract-OS/cw-plus.git#914729bbee842d2f79651b6024d634f1d53fec2f"
+dependencies = [
+ "boot-core 0.10.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cosmwasm-schema",
+ "cosmwasm-std",
+ "cw-utils 1.0.1",
+ "cw20 1.0.1 (git+https://github.com/Abstract-OS/cw-plus.git)",
+ "schemars",
+ "serde",
+ "thiserror",
+]
+
+[[package]]
+name = "cw3-fixed-multisig"
+version = "1.0.1"
+source = "git+https://github.com/Abstract-OS/cw-plus.git#914729bbee842d2f79651b6024d634f1d53fec2f"
+dependencies = [
+ "boot-core 0.10.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cosmwasm-schema",
+ "cosmwasm-std",
+ "cw-storage-plus 1.0.1",
+ "cw-utils 1.0.1",
+ "cw2 1.0.1 (git+https://github.com/Abstract-OS/cw-plus.git)",
+ "cw3",
+ "schemars",
+ "serde",
+ "thiserror",
+]
+
+[[package]]
+name = "cw3-flex-multisig"
+version = "1.0.1"
+source = "git+https://github.com/Abstract-OS/cw-plus.git#914729bbee842d2f79651b6024d634f1d53fec2f"
+dependencies = [
+ "boot-core 0.10.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cosmwasm-schema",
+ "cosmwasm-std",
+ "cw-storage-plus 1.0.1",
+ "cw-utils 1.0.1",
+ "cw2 1.0.1 (git+https://github.com/Abstract-OS/cw-plus.git)",
+ "cw20 1.0.1 (git+https://github.com/Abstract-OS/cw-plus.git)",
+ "cw3",
+ "cw3-fixed-multisig",
+ "cw4",
+ "schemars",
+ "serde",
+ "thiserror",
+]
+
+[[package]]
+name = "cw4"
+version = "1.0.1"
+source = "git+https://github.com/Abstract-OS/cw-plus.git#914729bbee842d2f79651b6024d634f1d53fec2f"
+dependencies = [
+ "boot-core 0.10.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cosmwasm-schema",
+ "cosmwasm-std",
+ "cw-storage-plus 1.0.1",
+ "schemars",
+ "serde",
+]
+
+[[package]]
+name = "cw4-group"
+version = "1.0.1"
+source = "git+https://github.com/Abstract-OS/cw-plus.git#914729bbee842d2f79651b6024d634f1d53fec2f"
+dependencies = [
+ "boot-core 0.10.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cosmwasm-schema",
+ "cosmwasm-std",
+ "cw-controllers 1.0.1 (git+https://github.com/Abstract-OS/cw-plus.git)",
+ "cw-storage-plus 1.0.1",
+ "cw-utils 1.0.1",
+ "cw2 1.0.1 (git+https://github.com/Abstract-OS/cw-plus.git)",
+ "cw4",
+ "schemars",
+ "serde",
+ "thiserror",
+]
+
+[[package]]
+name = "cw4-stake"
+version = "1.0.1"
+source = "git+https://github.com/Abstract-OS/cw-plus.git#914729bbee842d2f79651b6024d634f1d53fec2f"
+dependencies = [
+ "boot-core 0.10.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cosmwasm-schema",
+ "cosmwasm-std",
+ "cw-controllers 1.0.1 (git+https://github.com/Abstract-OS/cw-plus.git)",
+ "cw-storage-plus 1.0.1",
+ "cw-utils 1.0.1",
+ "cw2 1.0.1 (git+https://github.com/Abstract-OS/cw-plus.git)",
+ "cw20 1.0.1 (git+https://github.com/Abstract-OS/cw-plus.git)",
+ "cw4",
  "schemars",
  "serde",
  "thiserror",
@@ -1649,16 +2097,16 @@ source = "git+https://github.com/Abstract-OS/apis.git#e31b26569e7fdb6caf62c483d4
 dependencies = [
  "abstract-api",
  "abstract-boot 0.13.0",
- "abstract-core",
+ "abstract-core 0.13.0",
  "abstract-sdk 0.13.0",
  "astroport 2.0.0 (git+https://github.com/astroport-fi/astroport-core.git?rev=7bedc6f27e59ef8b921a0980be9bc30c4aab7459)",
- "boot-core",
+ "boot-core 0.8.0",
  "cosmwasm-schema",
  "cosmwasm-std",
  "cw-asset",
  "cw-storage-plus 1.0.1",
  "cw20 0.10.3",
- "cw20 1.0.1",
+ "cw20 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "schemars",
  "serde",
  "terraswap",
@@ -1713,6 +2161,19 @@ checksum = "91cff35c70bba8a626e3185d8cd48cc11b5437e1a5bcd15b9b5fa3c64b6dfee7"
 dependencies = [
  "serde",
  "signature",
+]
+
+[[package]]
+name = "ed25519-consensus"
+version = "2.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3c8465edc8ee7436ffea81d21a019b16676ee3db267aa8d5a8d729581ecf998b"
+dependencies = [
+ "curve25519-dalek-ng",
+ "hex",
+ "rand_core 0.6.4",
+ "sha2 0.9.9",
+ "zeroize",
 ]
 
 [[package]]
@@ -2115,6 +2576,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7f24254aa9a54b5c858eaee2f5bccdb46aaf0e486a595ed5fd8f86ba55232a70"
 
 [[package]]
+name = "hex_lit"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3011d1213f159867b13cfd6ac92d2cd5f1345762c63be3554e84092d85a50bbd"
+
+[[package]]
 name = "hkd32"
 version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2305,12 +2772,32 @@ dependencies = [
  "flex-error",
  "futures",
  "http",
- "ibc-proto",
- "ibc-relayer-types",
+ "ibc-proto 0.24.1",
+ "ibc-relayer-types 0.21.0",
  "reqwest",
  "serde",
  "serde_json",
  "tendermint-rpc 0.28.0",
+ "tokio",
+ "tracing",
+]
+
+[[package]]
+name = "ibc-chain-registry"
+version = "0.23.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c1c61ec20f3a311c7e7088f5726c1101d105523f04ef50561df0b5742d18b259"
+dependencies = [
+ "async-trait",
+ "flex-error",
+ "futures",
+ "http",
+ "ibc-proto 0.28.0",
+ "ibc-relayer-types 0.23.0",
+ "reqwest",
+ "serde",
+ "serde_json",
+ "tendermint-rpc 0.30.0",
  "tokio",
  "tracing",
 ]
@@ -2332,6 +2819,22 @@ dependencies = [
 ]
 
 [[package]]
+name = "ibc-proto"
+version = "0.28.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "40a2d356a360473d212dd20779b11ce858e35ac5509c7e1953002fa247780759"
+dependencies = [
+ "base64 0.13.1",
+ "bytes",
+ "flex-error",
+ "prost 0.11.8",
+ "serde",
+ "subtle-encoding",
+ "tendermint-proto 0.30.0",
+ "tonic",
+]
+
+[[package]]
 name = "ibc-relayer-types"
 version = "0.21.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2342,7 +2845,7 @@ dependencies = [
  "dyn-clone",
  "erased-serde",
  "flex-error",
- "ibc-proto",
+ "ibc-proto 0.24.1",
  "ics23",
  "itertools",
  "num-rational",
@@ -2354,9 +2857,38 @@ dependencies = [
  "serde_json",
  "subtle-encoding",
  "tendermint 0.28.0",
- "tendermint-light-client-verifier",
+ "tendermint-light-client-verifier 0.28.0",
  "tendermint-proto 0.28.0",
  "tendermint-rpc 0.28.0",
+ "time 0.3.11",
+ "uint",
+]
+
+[[package]]
+name = "ibc-relayer-types"
+version = "0.23.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "05064fd47044b1de6e6dbf18389dbbb460664ce8d9f1ab1067e1fb5eb163854c"
+dependencies = [
+ "bytes",
+ "derive_more",
+ "dyn-clone",
+ "erased-serde",
+ "flex-error",
+ "ibc-proto 0.28.0",
+ "ics23",
+ "itertools",
+ "num-rational",
+ "primitive-types",
+ "prost 0.11.8",
+ "safe-regex",
+ "serde",
+ "serde_derive",
+ "serde_json",
+ "subtle-encoding",
+ "tendermint 0.30.0",
+ "tendermint-light-client-verifier 0.30.0",
+ "tendermint-proto 0.30.0",
  "time 0.3.11",
  "uint",
 ]
@@ -3432,8 +3964,18 @@ version = "0.24.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6b1629c9c557ef9b293568b338dddfc8208c98a18c59d722a9d53f859d9c9b62"
 dependencies = [
- "bitcoin_hashes",
- "secp256k1-sys",
+ "bitcoin_hashes 0.11.0",
+ "secp256k1-sys 0.6.1",
+]
+
+[[package]]
+name = "secp256k1"
+version = "0.27.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "25996b82292a7a57ed3508f052cfff8640d38d32018784acd714758b43da9c8f"
+dependencies = [
+ "bitcoin_hashes 0.12.0",
+ "secp256k1-sys 0.8.1",
 ]
 
 [[package]]
@@ -3441,6 +3983,15 @@ name = "secp256k1-sys"
 version = "0.6.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "83080e2c2fc1006e625be82e5d1eb6a43b7fd9578b617fcc55814daf286bba4b"
+dependencies = [
+ "cc",
+]
+
+[[package]]
+name = "secp256k1-sys"
+version = "0.8.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "70a129b9e9efbfb223753b9163c4ab3b13cff7fd9c7f010fbac25ab4099fa07e"
 dependencies = [
  "cc",
 ]
@@ -3713,16 +4264,16 @@ version = "0.11.0"
 dependencies = [
  "abstract-app",
  "abstract-boot 0.13.0",
- "abstract-core",
+ "abstract-core 0.13.0",
  "abstract-sdk 0.13.0",
- "boot-core",
+ "boot-core 0.8.0",
  "cosmwasm-schema",
  "cosmwasm-std",
  "cw-asset",
- "cw-controllers 1.0.1",
+ "cw-controllers 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "cw-storage-plus 1.0.1",
- "cw2 1.0.1",
- "cw20 1.0.1",
+ "cw2 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cw20 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "schemars",
  "semver",
  "serde",
@@ -3743,6 +4294,12 @@ checksum = "7dcb1ed7b8330c5eed5441052651dd7a12c75e2ed88f2ec024ae1fa3a5e59945"
 dependencies = [
  "zeroize",
 ]
+
+[[package]]
+name = "subtle-ng"
+version = "2.5.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "734676eb262c623cec13c3155096e08d1f8f29adce39ba17948b18dad1e54142"
 
 [[package]]
 name = "syn"
@@ -3845,6 +4402,37 @@ dependencies = [
 ]
 
 [[package]]
+name = "tendermint"
+version = "0.30.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b90c3c1e32352551f0f1639ce765e4c66ce250c733d4b9ba1aff81130437465c"
+dependencies = [
+ "bytes",
+ "digest 0.10.6",
+ "ed25519",
+ "ed25519-consensus",
+ "flex-error",
+ "futures",
+ "k256",
+ "num-traits",
+ "once_cell",
+ "prost 0.11.8",
+ "prost-types",
+ "ripemd",
+ "serde",
+ "serde_bytes",
+ "serde_json",
+ "serde_repr",
+ "sha2 0.10.6",
+ "signature",
+ "subtle",
+ "subtle-encoding",
+ "tendermint-proto 0.30.0",
+ "time 0.3.11",
+ "zeroize",
+]
+
+[[package]]
 name = "tendermint-config"
 version = "0.23.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3873,6 +4461,20 @@ dependencies = [
 ]
 
 [[package]]
+name = "tendermint-config"
+version = "0.30.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "74efd33bcb53413b77cbe90ccb2cf0403930a5c1f300725deb87a61f7c4fab90"
+dependencies = [
+ "flex-error",
+ "serde",
+ "serde_json",
+ "tendermint 0.30.0",
+ "toml",
+ "url",
+]
+
+[[package]]
 name = "tendermint-light-client-verifier"
 version = "0.28.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3882,6 +4484,19 @@ dependencies = [
  "flex-error",
  "serde",
  "tendermint 0.28.0",
+ "time 0.3.11",
+]
+
+[[package]]
+name = "tendermint-light-client-verifier"
+version = "0.30.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f36e9193521a81e4c824faedc5eb31926f8918ebb21a1fa9cee9b3dbe5164a93"
+dependencies = [
+ "derive_more",
+ "flex-error",
+ "serde",
+ "tendermint 0.30.0",
  "time 0.3.11",
 ]
 
@@ -3908,6 +4523,24 @@ name = "tendermint-proto"
 version = "0.28.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "890f1fb6dee48900c85f0cdf711ebf130e505ac09ad918cee5c34ed477973b05"
+dependencies = [
+ "bytes",
+ "flex-error",
+ "num-derive",
+ "num-traits",
+ "prost 0.11.8",
+ "prost-types",
+ "serde",
+ "serde_bytes",
+ "subtle-encoding",
+ "time 0.3.11",
+]
+
+[[package]]
+name = "tendermint-proto"
+version = "0.30.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e553ed65874c3f35a71eb60d255edfea956274b5af37a0297d54bba039fe45e3"
 dependencies = [
  "bytes",
  "flex-error",
@@ -3961,7 +4594,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "06df4715f9452ec0a21885d6da8d804799455ba50d8bc40be1ec1c800afd4bd8"
 dependencies = [
  "async-trait",
- "async-tungstenite",
+ "async-tungstenite 0.17.2",
  "bytes",
  "flex-error",
  "futures",
@@ -3979,6 +4612,41 @@ dependencies = [
  "subtle-encoding",
  "tendermint 0.28.0",
  "tendermint-config 0.28.0",
+ "thiserror",
+ "time 0.3.11",
+ "tokio",
+ "tracing",
+ "url",
+ "uuid",
+ "walkdir",
+]
+
+[[package]]
+name = "tendermint-rpc"
+version = "0.30.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d79bd426571d6a805be5c0b6749707ede6c6ee5e55dd45baef46857a1baa9f54"
+dependencies = [
+ "async-trait",
+ "async-tungstenite 0.20.0",
+ "bytes",
+ "flex-error",
+ "futures",
+ "getrandom 0.2.8",
+ "http",
+ "hyper",
+ "hyper-proxy",
+ "hyper-rustls 0.22.1",
+ "peg",
+ "pin-project",
+ "semver",
+ "serde",
+ "serde_bytes",
+ "serde_json",
+ "subtle",
+ "subtle-encoding",
+ "tendermint 0.30.0",
+ "tendermint-config 0.30.0",
  "thiserror",
  "time 0.3.11",
  "tokio",
@@ -4310,6 +4978,27 @@ dependencies = [
  "rand 0.8.5",
  "rustls 0.20.8",
  "sha-1",
+ "thiserror",
+ "url",
+ "utf-8",
+ "webpki 0.22.0",
+]
+
+[[package]]
+name = "tungstenite"
+version = "0.18.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "30ee6ab729cd4cf0fd55218530c4522ed30b7b6081752839b68fcec8d0960788"
+dependencies = [
+ "base64 0.13.1",
+ "byteorder",
+ "bytes",
+ "http",
+ "httparse",
+ "log",
+ "rand 0.8.5",
+ "rustls 0.20.8",
+ "sha1",
  "thiserror",
  "url",
  "utf-8",
@@ -4750,8 +5439,8 @@ dependencies = [
  "cosmwasm-std",
  "cw-storage-plus 1.0.1",
  "cw-utils 1.0.1",
- "cw20 1.0.1",
- "cw20-base 1.0.1",
+ "cw20 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cw20-base 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "itertools",
  "thiserror",
  "uint",
@@ -4760,20 +5449,20 @@ dependencies = [
 [[package]]
 name = "wyndex-bundle"
 version = "0.2.0"
-source = "git+https://github.com/Abstract-OS/integration-bundles.git?branch=main#ddde8d86eac0121ecd545f7c45daf766a2697a42"
+source = "git+https://github.com/Abstract-OS/integration-bundles.git?branch=main#27e9060a56eb9188959234b35edde6cc01af8264"
 dependencies = [
- "abstract-boot 0.12.0",
- "abstract-os",
+ "abstract-boot 0.13.2",
+ "abstract-core 0.13.2",
  "anyhow",
- "boot-core",
- "boot-cw-plus",
+ "boot-core 0.10.0 (git+https://github.com/Abstract-OS/BOOT.git)",
+ "boot-cw-plus 0.10.0",
  "cosmwasm-schema",
  "cosmwasm-std",
  "cw-asset",
- "cw-controllers 1.0.1",
+ "cw-controllers 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "cw-multi-test",
- "cw20 1.0.1",
- "cw20-base 1.0.1",
+ "cw20 1.0.1 (git+https://github.com/Abstract-OS/cw-plus.git)",
+ "cw20-base 1.0.1 (git+https://github.com/Abstract-OS/cw-plus.git)",
  "wyndex",
  "wyndex-factory",
  "wyndex-multi-hop",
@@ -4791,7 +5480,7 @@ dependencies = [
  "cw-placeholder",
  "cw-storage-plus 1.0.1",
  "cw-utils 1.0.1",
- "cw2 1.0.1",
+ "cw2 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "itertools",
  "thiserror",
  "wyndex",
@@ -4806,8 +5495,8 @@ dependencies = [
  "cosmwasm-schema",
  "cosmwasm-std",
  "cw-storage-plus 1.0.1",
- "cw2 1.0.1",
- "cw20 1.0.1",
+ "cw2 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cw20 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "thiserror",
  "wyndex",
 ]
@@ -4821,9 +5510,9 @@ dependencies = [
  "cosmwasm-std",
  "cw-storage-plus 1.0.1",
  "cw-utils 1.0.1",
- "cw2 1.0.1",
- "cw20 1.0.1",
- "cw20-base 1.0.1",
+ "cw2 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cw20 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cw20-base 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "wyndex",
  "wyndex-stake",
 ]
@@ -4835,11 +5524,11 @@ source = "git+https://github.com/cosmorama/wynddex.git?rev=v1.1.2#acca3311673d9d
 dependencies = [
  "cosmwasm-schema",
  "cosmwasm-std",
- "cw-controllers 1.0.1",
+ "cw-controllers 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "cw-storage-plus 1.0.1",
  "cw-utils 1.0.1",
- "cw2 1.0.1",
- "cw20 1.0.1",
+ "cw2 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cw20 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde",
  "thiserror",
  "wynd-utils",
