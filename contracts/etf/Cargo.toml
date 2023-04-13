@@ -40,8 +40,10 @@ abstract-boot = { workspace = true , optional = true }
 cw20 = {workspace = true}
 abstract-etf = { path = ".", features = ["boot"] }
 wyndex-bundle = { git = "https://github.com/Abstract-OS/integration-bundles.git", branch = "main" }
-dex = { git = "https://github.com/Abstract-OS/apis.git", features = ["juno", "boot"] }
-cw-staking = { git = "https://github.com/Abstract-OS/apis.git", features = ["juno", "boot"] }
+dex = { package = "abstract-dex-api",path = "../../../apis/contracts/dex", features = ["juno", "boot"] }
+#dex = { package = "abstract-dex-api",git = "https://github.com/Abstract-OS/apis.git", features = ["juno", "boot"] }
+cw-staking = { package = "abstract-cw-staking-api", path = "../../../apis/contracts/cw-staking", features = ["juno", "boot"] }
+#cw-staking = { package = "abstract-cw-staking-api", git = "https://github.com/Abstract-OS/apis.git", features = ["juno", "boot"] }
 abstract-boot = { workspace = true, features = ["daemon"] }
 abstract-testing = { workspace = true }
 boot-cw-plus = { workspace = true }
