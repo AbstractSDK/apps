@@ -13,7 +13,7 @@ pub mod boot {
     use abstract_boot::AppDeployer;
     use abstract_core::app::{BaseInstantiateMsg, InstantiateMsg as AppInitMsg};
     use boot_core::ContractWrapper;
-    use boot_core::{contract, CwEnv, Contract};
+    use boot_core::{contract, Contract, CwEnv};
     use cosmwasm_std::{Decimal, Uint128};
     use cw_asset::AssetInfoUnchecked;
     use std::str::FromStr;
