@@ -1,5 +1,5 @@
 [package]
-name = "subscription"
+name = "abstract-subscription-app"
 version = { workspace = true }
 authors = { workspace = true }
 edition = { workspace = true }
@@ -13,6 +13,7 @@ crate-type = ["cdylib", "rlib"]
 default = ["export"]
 export = []
 boot = ["export", "dep:boot-core", "dep:abstract-boot"]
+schema = ["abstract-app/schema"]
 
 [dependencies]
 cosmwasm-std = { workspace = true }
@@ -36,3 +37,13 @@ abstract-boot = { workspace = true, optional = true }
 
 [dev-dependencies]
 cw20 = { workspace = true }
+subscription = { path = ".", features = ["boot"], package = "abstract-subscription-app" }
+tokio = { workspace = true }
+semver = { workspace = true }
+anyhow = { workspace = true }
+speculoos = { workspace = true }
+dotenv = "0.15.0"
+env_logger = "0.10.0"
+clap = { workspace = true }
+abstract-sdk = { workspace = true, features = ["test-utils"] }
+boot-cw-plus = { workspace = true }
