@@ -1,4 +1,4 @@
-use std::ops::Index;
+
 use std::sync::Arc;
 
 use abstract_boot::{
@@ -6,7 +6,7 @@ use abstract_boot::{
     boot_core::*,
     boot_core::networks::{NetworkInfo, parse_network}
 };
-use cosmwasm_std::{Decimal, Empty};
+
 use semver::Version;
 use abstract_subscription_app::boot::Subscription;
 use abstract_subscription_app::SUBSCRIPTION;
@@ -20,7 +20,7 @@ fn deploy_etf(network: NetworkInfo) -> anyhow::Result<()> {
     let rt = Arc::new(Runtime::new()?);
     let options = DaemonOptionsBuilder::default().network(network).build();
     let (_sender, chain) = instantiate_daemon_env(&rt, options?)?;
-    let mut subscription = Subscription::new(SUBSCRIPTION, chain.clone());
+    let mut subscription = Subscription::new(SUBSCRIPTION, chain);
 
     subscription.deploy(version)?;
     Ok(())

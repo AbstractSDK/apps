@@ -21,7 +21,7 @@ fn deploy_etf(network: NetworkInfo) -> anyhow::Result<()> {
     let rt = Arc::new(Runtime::new()?);
     let options = DaemonOptionsBuilder::default().network(network).build();
     let (_sender, chain) = instantiate_daemon_env(&rt, options?)?;
-    let mut etf = ETF::new(ETF_ID, chain.clone());
+    let mut etf = ETF::new(ETF_ID, chain);
 
     etf.deploy(version)?;
     Ok(())
