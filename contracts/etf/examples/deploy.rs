@@ -5,7 +5,6 @@ use abstract_boot::{
     boot_core::*,
     boot_core::networks::{NetworkInfo, parse_network}
 };
-use cosmwasm_std::{Decimal, Empty};
 use semver::Version;
 
 use abstract_etf_app::{
