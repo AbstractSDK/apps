@@ -1,4 +1,3 @@
-
 use abstract_etf_app::msg::StateResponse;
 use cosmwasm_schema::{export_schema, remove_schemas, schema_for};
 use std::env::current_dir;

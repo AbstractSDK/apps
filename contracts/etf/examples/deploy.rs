@@ -1,16 +1,13 @@
 use std::sync::Arc;
 
 use abstract_boot::{
-    AppDeployer,
+    boot_core::networks::{parse_network, NetworkInfo},
     boot_core::*,
-    boot_core::networks::{NetworkInfo, parse_network}
+    AppDeployer,
 };
 use semver::Version;
 
-use abstract_etf_app::{
-    boot::ETF,
-    ETF_ID
-};
+use abstract_etf_app::{boot::ETF, ETF_ID};
 use clap::Parser;
 use tokio::runtime::Runtime;
 

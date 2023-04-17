@@ -1,16 +1,15 @@
-
 use std::sync::Arc;
 
 use abstract_boot::{
-    AppDeployer,
+    boot_core::networks::{parse_network, NetworkInfo},
     boot_core::*,
-    boot_core::networks::{NetworkInfo, parse_network}
+    AppDeployer,
 };
 
-use semver::Version;
 use abstract_subscription_app::boot::Subscription;
 use abstract_subscription_app::SUBSCRIPTION;
 use clap::Parser;
+use semver::Version;
 use tokio::runtime::Runtime;
 
 const CONTRACT_VERSION: &str = env!("CARGO_PKG_VERSION");
