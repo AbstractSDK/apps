@@ -12,7 +12,8 @@ lint:
   cargo clippy --all -- -D warnings
 
 lintfix:
-  cargo clippy --fix --allow-staged --allow-dirty
+  cargo clippy --fix --allow-staged --allow-dirty --all-features
+  cargo fmt --all
 
 refresh:
   cargo clean && cargo update
