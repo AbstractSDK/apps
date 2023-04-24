@@ -36,7 +36,7 @@ abstract-boot = { workspace = true, optional = true }
 [dev-dependencies]
 cw20 = { workspace = true }
 abstract-etf = { path = ".", features = ["boot"] }
-wyndex-bundle = { git = "https://github.com/Abstract-OS/integration-bundles.git", rev = "v0.3.0" }
+wyndex-bundle = { git = "https://github.com/AbstractSDK/integration-bundles.git", rev = "v0.3.0" }
 abstract-boot = { workspace = true, features = ["daemon"] }
 abstract-testing = { workspace = true }
 boot-cw-plus = { workspace = true }
