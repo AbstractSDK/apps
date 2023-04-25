@@ -1,5 +1,5 @@
 [package]
-name = "abstract-etf"
+name = "abstract-etf-app"
 version = { workspace = true }
 authors = { workspace = true }
 edition = { workspace = true }
@@ -13,6 +13,7 @@ crate-type = ["cdylib", "rlib"]
 default = ["export"]
 export = []
 boot = ["export", "dep:abstract-boot", "dep:boot-core"]
+schema = ["abstract-app/schema"]
 
 [dependencies]
 cosmwasm-std = { workspace = true }
@@ -35,7 +36,7 @@ abstract-boot = { workspace = true, optional = true }
 
 [dev-dependencies]
 cw20 = { workspace = true }
-abstract-etf = { path = ".", features = ["boot"] }
+abstract-etf = { path = ".", features = ["boot"], package = "abstract-etf-app" }
 wyndex-bundle = { git = "https://github.com/Abstract-OS/integration-bundles.git", rev = "v0.3.0" }
 abstract-boot = { workspace = true, features = ["daemon"] }
 abstract-testing = { workspace = true }
@@ -43,3 +44,8 @@ boot-cw-plus = { workspace = true }
 semver = { workspace = true }
 anyhow = { workspace = true }
 speculoos = { workspace = true }
+tokio = { workspace = true }
+dotenv = "0.15.0"
+env_logger = "0.10.0"
+clap = { workspace = true }
+abstract-sdk = { workspace = true, features = ["test-utils"] }

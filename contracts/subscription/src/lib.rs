@@ -26,13 +26,13 @@ pub mod boot {
     impl<Chain: CwEnv> Subscription<Chain> {
         pub fn new(name: &str, chain: Chain) -> Self {
             let mut contract = Contract::new(name, chain);
-            contract = contract.with_wasm_path("subscription").with_mock(Box::new(
-                ContractWrapper::new_with_empty(
+            contract = contract
+                .with_wasm_path("abstract_subscription_app")
+                .with_mock(Box::new(ContractWrapper::new_with_empty(
                     crate::contract::execute,
                     crate::contract::instantiate,
                     crate::contract::query,
-                ),
-            ));
+                )));
             Self(contract)
         }
         pub fn init_msg(

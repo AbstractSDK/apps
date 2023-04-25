@@ -23,14 +23,16 @@ pub mod boot {
     impl<Chain: CwEnv> ETF<Chain> {
         pub fn new(name: &str, chain: Chain) -> Self {
             let mut contract = Contract::new(name, chain);
-            contract = contract.with_wasm_path("etf").with_mock(Box::new(
-                ContractWrapper::new_with_empty(
-                    crate::contract::execute,
-                    crate::contract::instantiate,
-                    crate::contract::query,
-                )
-                .with_reply(crate::contract::reply),
-            ));
+            contract = contract
+                .with_wasm_path("abstract_etf_app")
+                .with_mock(Box::new(
+                    ContractWrapper::new_with_empty(
+                        crate::contract::execute,
+                        crate::contract::instantiate,
+                        crate::contract::query,
+                    )
+                    .with_reply(crate::contract::reply),
+                ));
             Self(contract)
         }
     }
