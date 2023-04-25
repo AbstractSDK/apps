@@ -1,8 +1,8 @@
+use abstract_subscription_app::contract::SubscriptionApp;
 use cosmwasm_schema::{export_schema, export_schema_with_title, remove_schemas, schema_for};
 use cw_asset::{AssetInfo, AssetInfoUnchecked};
 use std::env::current_dir;
 use std::fs::create_dir_all;
-use abstract_subscription_app::contract::SubscriptionApp;
 
 use abstract_subscription_app::msg::{
     ConfigResponse, ContributorStateResponse, StateResponse, SubscriberStateResponse,
